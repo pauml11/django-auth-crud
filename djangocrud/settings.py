@@ -85,8 +85,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'djangocrud_1s1p',  # Nombre de tu base de datos
-        'USER': 'djangocrud_1s1p_user',  # Nombre de usuario
-        'PASSWORD': 'rSMsZ4po15Qe1yS8bW2OCwmEXbyRaxEq',  # Contraseña
+        'USER': 'Paulina',  # Nombre de usuario
+        'PASSWORD': 'pau2013',  # Contraseña
         'HOST': 'dpg-crvgk5u8ii6s73e86u30-a',  # Host
         'PORT': '5432',  # Puerto
     }
