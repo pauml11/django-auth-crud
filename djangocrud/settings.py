@@ -81,18 +81,12 @@ WSGI_APPLICATION = 'djangocrud.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-import os
+# Import the dj-database-url package at the beginning of the file
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('DB_NAME', 'djangocrud_1s1p'),
-        'USER': os.environ.get('DB_USER', 'djangocrud_1s1p_user'),
-        'PASSWORD': os.environ.get('DB_PASSWORD', 'rSMsZ4po15Qe1yS8bW2OCwmEXbyRaxEq'),
-        'HOST': os.environ.get('DB_HOST', 'dpg-crvgk5u8ii6s73e86u30-a'),
-        'PORT': os.environ.get('DB_PORT', '5432'),
-    }
-}
+    'default': dj_database_url.config(
+        default='postgresql://postgres:postgres@localhost:5432/mysite',        conn_max_age=600    )}
+
 
 
 
